@@ -16,7 +16,7 @@
   <body ng-app="flapperNews" ng-controller="MainCtrl">
 
     <!-- using ng-repeat allows automatic handling of lists -->
-    <div ng-repeat="post in posts">
+    <div ng-repeat="post in posts | orderBy: '-upvotes'">
       {{post.title}} - upvotes: {{post.upvotes}}
     </div>
   </body>
