@@ -14,9 +14,15 @@
   </head>
 
   <body ng-app="flapperNews" ng-controller="MainCtrl">
+
     <!-- {{test}} automatically replaced by Angularjs -->
     <div>
       {{test}}
+    </div>
+
+    <!-- using ng-repeat allows automatic handling of lists -->
+    <div ng-repeat="post in posts">
+      {{post}}
     </div>
   </body>
 
